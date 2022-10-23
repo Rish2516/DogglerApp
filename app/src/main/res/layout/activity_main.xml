@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.7"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/vertical"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="#74514545"
+        android:minWidth="250dp"
+        android:minHeight="60dp"
+        android:text="VERTICAL"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/horizontal"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#74514545"
+        android:minWidth="250dp"
+        android:minHeight="60dp"
+        android:text="HORIZONTAL"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/grid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vertical" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/grid"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#74514545"
+        android:minWidth="250dp"
+        android:minHeight="60dp"
+        android:text="GRID"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
